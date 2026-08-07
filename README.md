@@ -212,19 +212,9 @@ Every interaction in this redesign was crafted to reinforce one simple habit:
 
 **Marwadi University**
 
-* Product Design
-* Frontend Development
-* User Experience
-* Project Architecture
-
 ### Chintan Makwana
 
 **Sardar Vallabhbhai National Institute of Technology (SVNIT)**
-
-* Frontend Development
-* UI Components
-* Performance Optimization
-* Testing
 
 ---
 
