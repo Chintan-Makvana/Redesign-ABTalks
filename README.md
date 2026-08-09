@@ -56,15 +56,14 @@ Open index.html in your browser:
 Double-click index.html or use Live Server extension in VS Code.
 
 🤝 Community & Links
+
 Community: ABTalks on AI
-
 Discord: Join Community Server
-
 Socials: Instagram | LinkedIn | YouTube | X (Twitter)
 
 🧑‍💻 Author
-Chintan Makvana
 
+Chintan Makvana
 GitHub: @Chintan-Makvana
 
 📄 License
