@@ -1,5 +1,6 @@
 # ⚡ Redesign-ABTalks — AI Vibe Coding Hackathon Platform
  during abtalks Hackthon Round-1 / Project-1.
+
 A modern, responsive web application redesign for the **ABTalks 48-Hour AI Vibe Coding Hackathon**. This platform empowers developers to build projects in public, collaborate in teams of 1–3, leverage AI coding tools, and submit verified proof of work for recruiters and community leaderboards.
 
 🌐 **Live Website:** [https://chintan-makvana.github.io/Redesign-ABTalks/](https://chintan-makvana.github.io/Redesign-ABTalks/)
