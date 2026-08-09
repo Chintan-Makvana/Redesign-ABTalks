@@ -11,16 +11,16 @@
 <style>
   :root{
     --ink:#0A0C10;
-    --surface:#12151D;
-    --surface-2:#181C27;
+    --surface:#2a2b2c;
+    --surface-2:#26272c;
     --line: rgba(245,243,255,0.09);
     --violet:#7C5CFF;
     --violet-soft: rgba(124,92,255,0.14);
     --mint:#00E6A8;
     --mint-soft: rgba(0,230,168,0.12);
     --text:#F2F1F8;
-    --muted:#8D91A6;
-    --muted-2:#5E627A;
+    --muted:#b4afab;
+    --muted-2:#fcf1f1;
     --radius: 14px;
   }
 
@@ -124,7 +124,7 @@
     font-size:12.5px; letter-spacing:.06em;
     color:var(--mint);
     background:var(--mint-soft);
-    border:1px solid rgba(0,230,168,0.28);
+    border:1px solid rgba(5, 5, 5, 0.28);
     padding:6px 12px; border-radius:100px;
     margin-bottom:22px;
   }
@@ -429,7 +429,7 @@
 
   /* ===== CTA BAND ===== */
   .cta-band{
-    background:linear-gradient(120deg, rgba(124,92,255,0.14), rgba(0,230,168,0.10));
+    background:linear-gradient(120deg, rgba(56, 54, 65, 0.14), rgba(0,230,168,0.10));
     border:1px solid var(--line);
     border-radius:20px;
     padding:56px 44px;
@@ -469,6 +469,28 @@
   @media (prefers-reduced-motion: reduce){
     html{ scroll-behavior:auto; }
   }
+  header {
+    /* 0, 0, 0 is black, and 0.6 is 60% opacity. Change 0.6 to adjust darkness */
+    background-color: rgba(80, 70, 70, 0.6); 
+    
+   /* Keeps it layered over your hero video/image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+  .bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+}
+
 </style>
 </head>
 <body>
@@ -495,6 +517,10 @@
 
 <main>
   <!-- HERO -->
+   <video autoplay muted loop playsinline class="bg-video">
+  <source src="video3.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
@@ -852,8 +878,8 @@
         <div class="hero-ctas">
           <!-- Google Sign-In Initialization -->
 <div id="g_id_onload"
-     data-client_id="686426749138-28ocblv40m38c14eh5n9mtm3dd4s9pm6.apps.googleusercontent.com"
-     data-callback="handleCredentialResponse">
+     data-client_id="YOUR_CLINT_ID"
+     data-callback="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">
 </div>
 
 <!-- This renders the official Google Sign-In button -->
