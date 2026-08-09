@@ -1,229 +1,80 @@
-# 🚀 ABTalks Reimagined
+# ⚡ Redesign-ABTalks — AI Vibe Coding Hackathon Platform
 
-> **Not just another redesign. A platform engineered to help students stay consistent, motivated, and proud of showing up every single day.**
+A modern, responsive web application redesign for the **ABTalks 48-Hour AI Vibe Coding Hackathon**. This platform empowers developers to build projects in public, collaborate in teams of 1–3, leverage AI coding tools, and submit verified proof of work for recruiters and community leaderboards.
 
----
-
-# 🌟 Why We Built This
-
-Every year, thousands of students start coding challenges with excitement.
-
-Only a handful finish.
-
-Not because they're incapable—but because consistency is hard.
-
-ABTalks already solves this by encouraging students to make a GitHub commit and a LinkedIn post every day.
-
-Our goal was simple:
-
-**Make students want to come back tomorrow.**
-
-Instead of treating the platform as a task tracker, we redesigned it as a daily companion that celebrates progress, reduces friction, and keeps motivation alive throughout all 60 days.
+🌐 **Live Website:** [https://chintan-makvana.github.io/Redesign-ABTalks/](https://chintan-makvana.github.io/Redesign-ABTalks/)
 
 ---
 
-# 🎯 Challenge Overview
+## ✨ Features
 
-Students commit to a **60-Day Coding Challenge** by completing one practical task every day while maintaining a public learning streak through:
-
-* 💻 GitHub Commit
-* 💼 LinkedIn Learning Post
-
-Every completed day is another step toward becoming a stronger developer and building a recruiter-friendly public profile.
+- 🚀 **Interactive Hero Section:** Embedded background video (`video3.mp4`), stats metrics, and quick Google OAuth call-to-action.
+- ⏱️ **Live Workspace & Terminal:** Interactive dashboard simulation featuring live countdown timers, team setup indicators, and status checks.
+- 👥 **Team Management System:** UI for organizing teams of up to 3 members with automated invite link generator mechanics.
+- 🛠️ **AI Tool Stack Highlight:** Curated showcase of modern AI tools supported for vibe coding (Claude, ChatGPT, Cursor, Windsurf, Bolt, Replit, Lovable, GitHub Copilot).
+- 📅 **Sprint Roadmap (T-0 to T+72):** Visual 5-step timeline covering Kickoff, Build Window, AI Workflow Documentation, Submission, and Judging.
+- 🏆 **Dynamic Leaderboard & Certificates:** UI components for ranking submissions, displaying evaluation scores, and unlocking certificates.
+- 📱 **Fully Responsive:** Dark-mode UI crafted with CSS Flexbox & Grid for smooth viewing across desktop, tablet, and mobile devices.
 
 ---
 
-# 📱 Route Map
+## 🛠️ Tech Stack
+
+| Domain | Technology |
+| :--- | :--- |
+| **Front-End** | HTML5, CSS3, JavaScript (ES6+) |
+| **Typography & Icons** | Google Fonts, Custom SVG Icons |
+| **Media** | HTML5 Video Player |
+| **Deployment** | GitHub Pages |
+
+---
+
+## 📂 Project Structure
 
 ```text
-/
-/dashboard
-/day/12
+Redesign-ABTalks/
+├── index.html        # Main HTML file containing web application layout
+├── style.css         # Custom CSS styles (layout, dark theme, responsive breakpoints)
+├── script.js        # Dynamic scripts (timer, dashboard preview interactions)
+├── video3.mp4        # Hero section background video
+└── README.md         # Documentation
 ```
 
----
+🚀 Getting Started
+To run this project locally on your machine:
 
-# ✨ What Makes Our Design Different
+Clone the repository:
 
-Instead of focusing only on beautiful UI, we focused on **student psychology**.
+Bash
+git clone [https://github.com/Chintan-Makvana/Redesign-ABTalks.git](https://github.com/Chintan-Makvana/Redesign-ABTalks.git)
+Navigate to the project directory:
 
-### 🔥 Momentum-Driven Dashboard
+Bash
+cd Redesign-ABTalks
+Open index.html in your browser:
 
-Students don't just see numbers.
+Double-click index.html or use Live Server extension in VS Code.
 
-They see how far they've come, how close they are to milestones, and why today's task matters.
+🤝 Community & Links
+Community: ABTalks on AI
 
----
+Discord: Join Community Server
 
-### 🎖 Achievement System
+Socials: Instagram | LinkedIn | YouTube | X (Twitter)
 
-Small wins create long-term habits.
+🧑‍💻 Author
+Chintan Makvana
 
-Students unlock achievement badges throughout the challenge to keep motivation high.
+GitHub: @Chintan-Makvana
 
-Examples:
+📄 License
+This project is open-source and available under the MIT License.
 
-* First Commit
-* 7-Day Warrior
-* Halfway Hero
-* Consistency Champion
-* 60-Day Legend
-
----
-
-### 📈 Progress That Feels Real
-
-Instead of a simple percentage bar, progress is shown using:
-
-* Current streak
-* Challenge completion
-* Days remaining
-* Weekly momentum
-* Personal achievements
-
----
-
-### 📚 Crystal Clear Daily Tasks
-
-Each challenge day clearly answers:
-
-* What should I build?
-* Why am I building it?
-* What should I submit?
-* What will I learn today?
-
-No confusion.
-
-No unnecessary clicks.
-
----
-
-### 🚀 One-Tap Submission Flow
-
-Submitting work is effortless.
-
-Students simply paste:
-
-* GitHub Repository or Commit URL
-* LinkedIn Post URL
-
-and mark the day complete.
-
----
-
-# 🛡 Designed for Real Students
-
-The experience gracefully handles situations like:
-
-* 🌱 First day with zero progress
-* 😔 Missed challenge day
-* 👤 Empty profile
-* 📭 No submissions yet
-* 🏁 Challenge completed
-
-Every screen provides encouragement instead of punishment.
-
----
-
-# 💡 Our Thoughtful Innovation
-
-## ✨ Daily Momentum Score
-
-Instead of only displaying a streak, the dashboard introduces a **Momentum Score**.
-
-The score reflects consistency over time and rewards students who quickly recover after missing a day.
-
-This shifts the focus from perfection to continuous improvement—making the challenge less discouraging and more sustainable.
-
----
-
-# 🛠 Tech Stack
-
-### Frontend
-
-* React
-* Vite
-* Tailwind CSS
-
-### Data
-
-* Mock JSON Data
-
-### Design
-
-* Mobile-First (390px)
-* Fully Responsive
-
-### Deployment
-
-* Vercel
-
----
-
-# 🚀 Run Locally
-
-Clone the repository
-
-```bash
-git clone https://github.com/your-username/your-repository.git
 ```
+<ElicitationsGroup message="Where would you like to go from here?">
 
-Navigate into the project
+{/* Reason: Offers relevant, valuable next steps to improve the GitHub repository presentation. */}
 
-```bash
-cd your-repository
-```
-
-Install dependencies
-
-```bash
-npm install
-```
-
-Start the development server
-
-```bash
-npm run dev
-```
-
-Create a production build
-
-```bash
-npm run build
-```
-
----
-
-# 🧠 Design Philosophy
-
-> Great products don't just help users complete tasks.
-
-> Great products help users become the person they aspire to be.
-
-Every interaction in this redesign was crafted to reinforce one simple habit:
-
-**Show up today.**
-
----
-
-# 👨‍💻 Credits
-
-### Manav Parmar
-
-**Marwadi University**
-
-### Chintan Makwana
-
-**Sardar Vallabhbhai National Institute of Technology (SVNIT)**
-
----
-
-# ❤️ Final Note
-
-This project is more than a hackathon submission.
-
-It represents our belief that **consistency can change careers**.
-
-If this redesign helps even one student stay committed for one more day, then we've built something meaningful.
-
-**Build. Learn. Share. Repeat.**
+  <Elicitation label="Add interactive JavaScript features (countdown timer, modal, dark/light toggle)" query="Provide JavaScript code snippets to implement a working countdown timer and team link copy feature for the Redesign-ABTalks project."/>
+  <Elicitation label="Create a CSS styling guide for dark-mode AI hackathon landings" query="Give me modern CSS snippet enhancements for glassmorphism panels, dark mode glow effects, and responsive navigation bar for Redesign-ABTalks."/>
+</ElicitationsGroup> ```
