@@ -1,4 +1,7 @@
 # PROMPTS.md
+<img width="861" height="802" alt="image" src="https://github.com/user-attachments/assets/4a4d12eb-c3ee-447f-b16a-0b8b0d488f28" />
+<img width="1058" height="821" alt="image" src="https://github.com/user-attachments/assets/1edd9ea6-eb10-40a9-8e72-c9c559268a95" />
+<img width="1133" height="756" alt="image" src="https://github.com/user-attachments/assets/b319edfe-3cc1-48bf-bc9f-e46b18920d06" />
 
 # 🧠 AI Development Journal
 
