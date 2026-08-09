@@ -1,5 +1,5 @@
 # ⚡ Redesign-ABTalks — AI Vibe Coding Hackathon Platform
-
+ during abtalks Hackthon Round-1 / Project-1.
 A modern, responsive web application redesign for the **ABTalks 48-Hour AI Vibe Coding Hackathon**. This platform empowers developers to build projects in public, collaborate in teams of 1–3, leverage AI coding tools, and submit verified proof of work for recruiters and community leaderboards.
 
 🌐 **Live Website:** [https://chintan-makvana.github.io/Redesign-ABTalks/](https://chintan-makvana.github.io/Redesign-ABTalks/)
@@ -69,11 +69,4 @@ GitHub: @Chintan-Makvana
 📄 License
 This project is open-source and available under the MIT License.
 
-```
-<ElicitationsGroup message="Where would you like to go from here?">
-
-{/* Reason: Offers relevant, valuable next steps to improve the GitHub repository presentation. */}
-
-  <Elicitation label="Add interactive JavaScript features (countdown timer, modal, dark/light toggle)" query="Provide JavaScript code snippets to implement a working countdown timer and team link copy feature for the Redesign-ABTalks project."/>
-  <Elicitation label="Create a CSS styling guide for dark-mode AI hackathon landings" query="Give me modern CSS snippet enhancements for glassmorphism panels, dark mode glow effects, and responsive navigation bar for Redesign-ABTalks."/>
-</ElicitationsGroup> ```
+THANK YOU 🙇
