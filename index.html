@@ -870,24 +870,22 @@
   </section>
 
   <!-- CTA -->
-  <section id="signin">
-    <div class="wrap">
-      <div class="cta-band">
-        <h2>Your next project is 48 hours away.</h2>
-        <p>Sign in with Google to open your dashboard, lock in your team, and start building.</p>
-        <div class="hero-ctas">
-          <!-- Google Sign-In Initialization -->
-<div id="g_id_onload"
-     data-client_id="YOUR_CLINT_ID"
-     data-callback="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">
-</div>
-
-<!-- This renders the official Google Sign-In button -->
-<div class="g_id_signin" data-type="standard"></div>
-        </div>
+  <!-- CTA -->
+<section id="signin">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Your next project is 48 hours away.</h2>
+      <p>Sign in with Google to open your dashboard, lock in your team, and start building.</p>
+      <div class="hero-ctas">
+        <!-- Google Sign-In Trigger for Firebase -->
+        <button type="button" onclick="loginWithGoogle()" class="btn btn-primary">
+          Sign in with Google
+        </button>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 </main>
 
 <footer>
@@ -912,7 +910,7 @@
   </div>
 </footer>
 
-<script>
+<script type="module">
   // Countdown to submission deadline — placeholder target date
   var target = new Date("2026-08-30T18:00:00+05:30").getTime();
 
@@ -946,13 +944,20 @@
     
     // You can now decode the token or redirect the user to your dashboard!
   }
-</script>
-<script type="module">
-  // Import Firebase modules directly from CDN
+
+
+  // 1. Import Firebase SDKs
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+  import { 
+    getAuth, 
+    GoogleAuthProvider, 
+    signInWithPopup, 
+    onAuthStateChanged,
+    signOut 
+  } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
-  // Your Firebase configuration
+  // 2. Your Firebase Config
   const firebaseConfig = {
     apiKey: "AIzaSyDncKODddn2FSV-rcSiqdMPD15v4vkN_gg",
     authDomain: "abtalks-b85f4.firebaseapp.com",
@@ -963,12 +968,37 @@
     measurementId: "G-5Y2J9WYDZ6"
   };
 
-  // Initialize Firebase & Analytics
+  // 3. Initialize Firebase & Auth
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
 
-  console.log("Firebase initialized successfully!");
+  // 4. Trigger Login on Button Click
+  window.loginWithGoogle = function () {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const user = result.user;
+        console.log("Logged in user:", user);
+        alert(`Welcome ${user.displayName}!`);
+      })
+      .catch((error) => {
+        console.error("Authentication Error:", error.message);
+        alert("Login failed: " + error.message);
+      });
+  };
+
+  // 5. Monitor User Login State
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      console.log("User is currently signed in:", user.email);
+    } else {
+      console.log("No user signed in.");
+    }
+  });
 </script>
+
+
   
 </body>
 </html>
